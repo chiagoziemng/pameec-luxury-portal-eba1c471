@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Shield, Zap, MapPin, Users, Wifi, Car } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { SectionHeader } from '@/components/common/SectionHeader';
-import heroImage from '@/assets/hero-lobby.jpg';
-import roomImage from '@/assets/room-suite.jpg';
-import poolImage from '@/assets/pool-area.jpg';
-import restaurantImage from '@/assets/restaurant.jpg';
-import eventHallImage from '@/assets/event-hall.jpg';
+import heroImage from '@/assets/pameec-twin-buildings.jpg';
+import roomImage from '@/assets/pameec-reception.jpg';
+import poolImage from '@/assets/pameec-pool.jpg';
+import restaurantImage from '@/assets/pameec-restaurant.jpg';
+import eventHallImage from '@/assets/pameec-hall-interior.jpg';
 
 const branches = [
   {
@@ -378,7 +378,7 @@ export default function Home() {
               <Link to="/contact">Book Now</Link>
             </Button>
             <Button variant="whatsapp" size="lg" asChild>
-              <a href="https://wa.me/2348000000000" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/2348131577816" target="_blank" rel="noopener noreferrer">
                 Chat on WhatsApp
               </a>
             </Button>

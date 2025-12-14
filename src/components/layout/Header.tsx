@@ -78,12 +78,12 @@ export function Header() {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-4">
-            <a href="tel:+2348000000000" className={cn(
+            <a href="tel:+2348131577816" className={cn(
               "flex items-center gap-2 text-sm font-medium transition-colors",
               isScrolled ? "text-foreground" : "text-primary-foreground"
             )}>
               <Phone className="h-4 w-4" />
-              <span className="hidden xl:inline">+234 800 000 0000</span>
+              <span className="hidden xl:inline">+234 813 157 7816</span>
             </a>
             <Button 
               variant={isScrolled ? "default" : "hero-outline"} 
@@ -126,9 +126,9 @@ export function Header() {
                 </Link>
               ))}
               <div className="pt-4 border-t border-border space-y-3">
-                <a href="tel:+2348000000000" className="flex items-center gap-2 text-foreground">
+                <a href="tel:+2348131577816" className="flex items-center gap-2 text-foreground">
                   <Phone className="h-4 w-4" />
-                  +234 800 000 0000
+                  +234 813 157 7816
                 </a>
                 <Button variant="default" className="w-full" asChild>
                   <Link to="/contact">Book Now</Link>

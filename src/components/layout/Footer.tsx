@@ -4,18 +4,18 @@ import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Twitter } from 'lucide
 const branches = [
   {
     name: 'Pameec Luxury Suite, Lokogoma',
-    address: 'Plot 123, Lokogoma District, Abuja',
-    phone: '+234 800 000 0001',
+    address: 'Plot 354 Apo/Lokogoma Express Way, Abuja',
+    phone: '+234 816 606 5843',
   },
   {
     name: 'Pameec Luxury Suite, Utako',
-    address: 'Plot 456, Utako District, Abuja',
-    phone: '+234 800 000 0002',
+    address: 'No 36 Ajose Adeogun Street, Abuja',
+    phone: '+234 901 408 4741',
   },
   {
     name: 'Pameec Exclusive Apartment, Utako',
-    address: 'Plot 789, Utako District, Abuja',
-    phone: '+234 800 000 0003',
+    address: 'No 4 Henry Adefope Close, Abuja',
+    phone: '+234 703 313 4119',
   },
 ];
 
@@ -101,7 +101,7 @@ export function Footer() {
           <div className="flex flex-wrap justify-center gap-8 text-sm text-background/60">
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4" />
-              <span>+234 800 000 0000</span>
+              <span>+234 813 157 7816</span>
             </div>
             <div className="flex items-center gap-2">
               <Mail className="h-4 w-4" />

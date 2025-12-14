@@ -4,28 +4,31 @@ import { Link } from 'react-router-dom';
 import { X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { SectionHeader } from '@/components/common/SectionHeader';
-import lobbyImage from '@/assets/hero-lobby.jpg';
-import roomImage from '@/assets/room-suite.jpg';
-import poolImage from '@/assets/pool-area.jpg';
-import restaurantImage from '@/assets/restaurant.jpg';
-import eventHallImage from '@/assets/event-hall.jpg';
+import pameecLokogoma from '@/assets/pameec-lokogoma.jpg';
+import pameecUtako from '@/assets/pameec-utako.jpg';
+import pameecPool from '@/assets/pameec-pool.jpg';
+import pameecReception from '@/assets/pameec-reception.jpg';
+import pameecRestaurant from '@/assets/pameec-restaurant.jpg';
+import pameecHallInterior from '@/assets/pameec-hall-interior.jpg';
+import pameecHallStage from '@/assets/pameec-hall-stage.jpg';
+import pameecOutdoorBar from '@/assets/pameec-outdoor-bar.jpg';
+import pameecTwinBuildings from '@/assets/pameec-twin-buildings.jpg';
+import pameecEventHall from '@/assets/pameec-event-hall.jpg';
 
 const galleryImages = [
-  { src: lobbyImage, alt: 'Pameec Luxury Suite elegant lobby', category: 'Lobby' },
-  { src: roomImage, alt: 'Luxury suite bedroom at Pameec', category: 'Rooms' },
-  { src: poolImage, alt: 'Swimming pool at Pameec Lokogoma', category: 'Pool' },
-  { src: restaurantImage, alt: 'Fine dining restaurant at Pameec', category: 'Dining' },
-  { src: eventHallImage, alt: 'Event hall for conferences and weddings', category: 'Events' },
-  { src: lobbyImage, alt: 'Reception area at Pameec Luxury Suite', category: 'Lobby' },
-  { src: roomImage, alt: 'Premium suite interior', category: 'Rooms' },
-  { src: poolImage, alt: 'Pool lounge area', category: 'Pool' },
-  { src: restaurantImage, alt: 'Outdoor dining area', category: 'Dining' },
-  { src: eventHallImage, alt: 'Conference setup at event hall', category: 'Events' },
-  { src: roomImage, alt: 'Executive suite at Pameec', category: 'Rooms' },
-  { src: lobbyImage, alt: 'Lobby seating area', category: 'Lobby' },
+  { src: pameecTwinBuildings, alt: 'Pameec Luxury Suite twin buildings in Lokogoma', category: 'Exterior' },
+  { src: pameecLokogoma, alt: 'Pameec Luxury Suite Lokogoma exterior', category: 'Exterior' },
+  { src: pameecUtako, alt: 'Pameec Luxury Suite Utako exterior', category: 'Exterior' },
+  { src: pameecEventHall, alt: 'Pameec Event Hall & Apartment building', category: 'Exterior' },
+  { src: pameecReception, alt: 'Reception area at Pameec Luxury Suite', category: 'Lobby' },
+  { src: pameecPool, alt: 'Swimming pool at Pameec Lokogoma', category: 'Pool' },
+  { src: pameecRestaurant, alt: 'Indoor restaurant at Pameec', category: 'Dining' },
+  { src: pameecOutdoorBar, alt: 'Outdoor bar area at Pameec', category: 'Dining' },
+  { src: pameecHallInterior, alt: 'Event hall interior setup at Pameec', category: 'Events' },
+  { src: pameecHallStage, alt: 'Event hall with stage at Pameec', category: 'Events' },
 ];
 
-const categories = ['All', 'Lobby', 'Rooms', 'Pool', 'Dining', 'Events'];
+const categories = ['All', 'Exterior', 'Lobby', 'Pool', 'Dining', 'Events'];
 
 export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState('All');
@@ -137,7 +140,7 @@ export default function Gallery() {
               <Link to="/contact">Schedule a Visit</Link>
             </Button>
             <Button variant="outline" asChild>
-              <a href="https://wa.me/2348000000000" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/2348131577816" target="_blank" rel="noopener noreferrer">
                 Request Virtual Tour
               </a>
             </Button>

@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Waves, Utensils, Car, Shield, Zap, Wifi } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { SectionHeader } from '@/components/common/SectionHeader';
-import poolImage from '@/assets/pool-area.jpg';
-import lobbyImage from '@/assets/hero-lobby.jpg';
-import roomImage from '@/assets/room-suite.jpg';
+import pameecLokogoma from '@/assets/pameec-lokogoma.jpg';
+import pameecUtako from '@/assets/pameec-utako.jpg';
+import pameecEventHall from '@/assets/pameec-event-hall.jpg';
 
 const branches = [
   {
@@ -13,10 +13,10 @@ const branches = [
     name: 'Pameec Luxury Suite',
     location: 'Lokogoma',
     tagline: 'Our flagship property with swimming pool',
-    address: 'Plot 123, Lokogoma District, Abuja, FCT, Nigeria',
-    phone: '+234 800 000 0001',
+    address: 'Plot 354 Apo/Lokogoma Express Way, Abuja, FCT, Nigeria',
+    phone: '+234 816 606 5843',
     email: 'lokogoma@pameecluxurysuite.com',
-    image: poolImage,
+    image: pameecLokogoma,
     description: 'Nestled in the serene residential district of Lokogoma, our flagship property offers a perfect blend of luxury and tranquility. This location features our signature swimming pool, making it ideal for guests seeking relaxation alongside premium accommodation.',
     features: [
       { icon: Waves, name: 'Swimming Pool', desc: 'Outdoor pool with lounging area' },
@@ -27,17 +27,17 @@ const branches = [
       { icon: Wifi, name: 'Free WiFi', desc: 'High-speed internet' },
     ],
     rooms: ['Standard Suite', 'Business Suite', 'Superior Room', 'Diplomatic Suite', 'Executive Suite'],
-    mapUrl: 'https://maps.google.com/?q=Lokogoma+Abuja',
+    mapUrl: 'https://maps.google.com/?q=Plot+354+Apo+Lokogoma+Express+Way+Abuja',
   },
   {
     id: 'utako',
     name: 'Pameec Luxury Suite',
     location: 'Utako',
     tagline: 'Prime location for business travelers',
-    address: 'Plot 456, Utako District, Abuja, FCT, Nigeria',
-    phone: '+234 800 000 0002',
+    address: 'No 36 Ajose Adeogun Street, Utako, Abuja, FCT, Nigeria',
+    phone: '+234 901 408 4741',
     email: 'utako@pameecluxurysuite.com',
-    image: lobbyImage,
+    image: pameecUtako,
     description: 'Strategically located in the bustling Utako district, this property is perfect for business travelers and those who want to be in the heart of Abuja. With easy access to major business centers, government offices, and shopping areas, convenience meets luxury.',
     features: [
       { icon: Utensils, name: 'Restaurant & Bar', desc: 'Fine dining experience' },
@@ -48,17 +48,17 @@ const branches = [
       { icon: Car, name: 'Airport Transfer', desc: 'Pickup and drop-off service' },
     ],
     rooms: ['Standard Suite', 'Business Suite', 'Superior Room', 'Executive Suite'],
-    mapUrl: 'https://maps.google.com/?q=Utako+Abuja',
+    mapUrl: 'https://maps.google.com/?q=36+Ajose+Adeogun+Street+Utako+Abuja',
   },
   {
     id: 'exclusive',
     name: 'Pameec Exclusive Apartment',
     location: 'Utako',
     tagline: 'Fully serviced apartments for extended stays',
-    address: 'Plot 789, Utako District, Abuja, FCT, Nigeria',
-    phone: '+234 800 000 0003',
+    address: 'No 4 Henry Adefope Close, Utako, Abuja, FCT, Nigeria',
+    phone: '+234 703 313 4119',
     email: 'exclusive@pameecluxurysuite.com',
-    image: roomImage,
+    image: pameecEventHall,
     description: 'Perfect for extended stays, relocating families, and guests who prefer a home-away-from-home experience. Our exclusive apartments feature fully equipped kitchens, spacious living areas, and all the comforts of home combined with hotel-quality service.',
     features: [
       { icon: Utensils, name: 'Full Kitchen', desc: 'Equipped with modern appliances' },
@@ -69,7 +69,7 @@ const branches = [
       { icon: Car, name: 'Housekeeping', desc: 'Regular cleaning service' },
     ],
     rooms: ['One-Bedroom Apartment', 'Two-Bedroom Apartment', 'Three-Bedroom Apartment'],
-    mapUrl: 'https://maps.google.com/?q=Utako+Abuja',
+    mapUrl: 'https://maps.google.com/?q=4+Henry+Adefope+Close+Utako+Abuja',
   },
 ];
 
