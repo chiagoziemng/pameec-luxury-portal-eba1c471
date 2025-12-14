@@ -105,10 +105,13 @@ export default function Home() {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroImage})` }}
+          className="absolute inset-0 bg-cover bg-no-repeat scale-150"
+          style={{ 
+            backgroundImage: `url(${heroImage})`,
+            backgroundPosition: 'center 25%'
+          }}
         >
           <div className="absolute inset-0 bg-foreground/50" />
         </div>

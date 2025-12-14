@@ -105,7 +105,7 @@ export function Footer() {
             </div>
             <div className="flex items-center gap-2">
               <Mail className="h-4 w-4" />
-              <span>info@pameecluxurysuite.com</span>
+              <a href="mailto:pameechotel@gmail.com" className="hover:text-background transition-colors">pameechotel@gmail.com</a>
             </div>
             <div className="flex items-center gap-2">
               <Clock className="h-4 w-4" />
@@ -120,10 +120,17 @@ export function Footer() {
         <div className="container-luxury py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-background/50">
             <p>© {currentYear} Pameec Luxury Suite. All rights reserved.</p>
-            <div className="flex gap-6">
-              <Link to="/privacy" className="hover:text-background transition-colors">Privacy Policy</Link>
-              <Link to="/terms" className="hover:text-background transition-colors">Terms of Service</Link>
-            </div>
+            <p>
+              Powered by{' '}
+              <a 
+                href="https://www.omarandblasius.com.ng" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:text-primary-light transition-colors font-medium"
+              >
+                Omar and Blasius
+              </a>
+            </p>
           </div>
         </div>
       </div>
