@@ -13,7 +13,7 @@ const branches = [
     name: 'Pameec Luxury Suite',
     location: 'Lokogoma',
     tagline: 'Our flagship property with swimming pool',
-    address: 'Plot 354 Apo/Lokogoma Express Way, Abuja, FCT, Nigeria',
+    address: 'Plot 354, Adjacent Sunshine Estate, Along Lokogoma/Apo, Apo Dutse District, Abuja, FCT, Nigeria',
     phone: '+234 816 606 5843',
     email: 'lokogoma@pameecluxurysuite.com',
     image: pameecLokogoma,
@@ -27,7 +27,7 @@ const branches = [
       { icon: Wifi, name: 'Free WiFi', desc: 'High-speed internet' },
     ],
     rooms: ['Standard Suite', 'Business Suite', 'Superior Room', 'Diplomatic Suite', 'Executive Suite'],
-    mapUrl: 'https://maps.google.com/?q=Plot+354+Apo+Lokogoma+Express+Way+Abuja',
+    mapUrl: 'https://maps.google.com/?q=Plot+354+Adjacent+Sunshine+Estate+Along+Lokogoma+Apo+Apo+Dutse+District+Abuja',
   },
   {
     id: 'utako',
@@ -48,7 +48,7 @@ const branches = [
       { icon: Car, name: 'Airport Transfer', desc: 'Pickup and drop-off service' },
     ],
     rooms: ['Standard Suite', 'Business Suite', 'Superior Room', 'Executive Suite'],
-    mapUrl: 'https://maps.google.com/?q=36+Ajose+Adeogun+Street+Utako+Abuja',
+    mapUrl: 'https://maps.google.com/?q=No+36+Ajose+Adeogun+St+opposite+Peace+Mass+Utako+Abuja+900108',
   },
   {
     id: 'exclusive',
