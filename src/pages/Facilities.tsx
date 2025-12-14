@@ -6,37 +6,37 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { SectionHeader } from '@/components/common/SectionHeader';
-import poolImage from '@/assets/pool-area.jpg';
-import restaurantImage from '@/assets/restaurant.jpg';
-import eventHallImage from '@/assets/event-hall.jpg';
+import pameecPool from '@/assets/pameec-pool.jpg';
+import pameecRestaurant from '@/assets/pameec-restaurant.jpg';
+import pameecHallInterior from '@/assets/pameec-hall-interior.jpg';
 
 const mainFacilities = [
   {
     icon: Waves,
     title: 'Swimming Pool',
     description: 'Outdoor swimming pool with comfortable loungers, perfect for relaxation and leisure. Available at our Lokogoma branch.',
-    image: poolImage,
+    image: pameecPool,
     location: 'Lokogoma',
   },
   {
     icon: Utensils,
     title: 'Restaurant',
     description: 'Fine dining experience with a menu featuring local Nigerian cuisine and international dishes prepared by our expert chefs.',
-    image: restaurantImage,
+    image: pameecRestaurant,
     location: 'All Branches',
   },
   {
     icon: Wine,
     title: 'Bar & Lounge',
     description: 'Indoor and outdoor bars serving premium beverages, cocktails, and light refreshments in a sophisticated atmosphere.',
-    image: restaurantImage,
+    image: pameecRestaurant,
     location: 'All Branches',
   },
   {
     icon: Users,
     title: 'Event Halls',
     description: 'Multipurpose halls accommodating 500-1,000 guests, ideal for weddings, conferences, seminars, and corporate events.',
-    image: eventHallImage,
+    image: pameecHallInterior,
     location: 'Lokogoma & Utako',
   },
 ];
@@ -169,7 +169,7 @@ export default function Facilities() {
                   <Link to="/contact">Reserve a Hall</Link>
                 </Button>
                 <Button variant="outline" asChild>
-                  <a href="https://wa.me/2348000000000" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/2348131577816" target="_blank" rel="noopener noreferrer">
                     Get a Quote
                   </a>
                 </Button>
@@ -178,7 +178,7 @@ export default function Facilities() {
             
             <div>
               <img 
-                src={eventHallImage}
+                src={pameecHallInterior}
                 alt="Event hall at Pameec Luxury Suite for conferences and weddings in Abuja"
                 className="w-full h-[500px] object-cover rounded-sm shadow-luxury-lg"
                 loading="lazy"
@@ -217,7 +217,7 @@ export default function Facilities() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
               <img 
-                src={restaurantImage}
+                src={pameecRestaurant}
                 alt="Fine dining restaurant at Pameec Luxury Suite Abuja"
                 className="w-full h-[500px] object-cover rounded-sm"
                 loading="lazy"

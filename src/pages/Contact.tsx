@@ -8,22 +8,22 @@ import { useToast } from '@/hooks/use-toast';
 const branches = [
   {
     name: 'Pameec Luxury Suite, Lokogoma',
-    address: 'Plot 123, Lokogoma District, Abuja, FCT, Nigeria',
-    phone: '+234 800 000 0001',
+    address: 'Plot 354 Apo/Lokogoma Express Way, Abuja, FCT, Nigeria',
+    phone: '+234 816 606 5843',
     email: 'lokogoma@pameecluxurysuite.com',
     hours: '24/7 Reception',
   },
   {
     name: 'Pameec Luxury Suite, Utako',
-    address: 'Plot 456, Utako District, Abuja, FCT, Nigeria',
-    phone: '+234 800 000 0002',
+    address: 'No 36 Ajose Adeogun Street, Utako, Abuja, FCT, Nigeria',
+    phone: '+234 901 408 4741',
     email: 'utako@pameecluxurysuite.com',
     hours: '24/7 Reception',
   },
   {
     name: 'Pameec Exclusive Apartment, Utako',
-    address: 'Plot 789, Utako District, Abuja, FCT, Nigeria',
-    phone: '+234 800 000 0003',
+    address: 'No 4 Henry Adefope Close, Utako, Abuja, FCT, Nigeria',
+    phone: '+234 703 313 4119',
     email: 'exclusive@pameecluxurysuite.com',
     hours: '24/7 Reception',
   },
@@ -95,7 +95,7 @@ export default function Contact() {
             "@context": "https://schema.org",
             "@type": "Hotel",
             "name": "Pameec Luxury Suite",
-            "telephone": "+234 800 000 0000",
+            "telephone": "+234 813 157 7816",
             "email": "info@pameecluxurysuite.com",
             "address": {
               "@type": "PostalAddress",
@@ -303,11 +303,11 @@ export default function Contact() {
                 <h3 className="font-heading text-xl font-medium mb-6">Quick Contact</h3>
                 <div className="space-y-4">
                   <a 
-                    href="tel:+2348000000000" 
+                    href="tel:+2348131577816" 
                     className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
                   >
                     <Phone className="h-5 w-5 text-primary" />
-                    +234 800 000 0000
+                    +234 813 157 7816
                   </a>
                   <a 
                     href="mailto:info@pameecluxurysuite.com" 
@@ -317,7 +317,7 @@ export default function Contact() {
                     info@pameecluxurysuite.com
                   </a>
                   <a 
-                    href="https://wa.me/2348000000000" 
+                    href="https://wa.me/2348131577816" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
@@ -329,7 +329,7 @@ export default function Contact() {
                 
                 <div className="mt-8 pt-6 border-t border-border">
                   <Button variant="whatsapp" className="w-full" asChild>
-                    <a href="https://wa.me/2348000000000" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/2348131577816" target="_blank" rel="noopener noreferrer">
                       <MessageCircle className="h-4 w-4" />
                       WhatsApp Us Now
                     </a>
@@ -386,9 +386,9 @@ export default function Contact() {
             Call us directly for immediate assistance with your reservation.
           </p>
           <Button variant="hero-outline" size="lg" asChild>
-            <a href="tel:+2348000000000">
+            <a href="tel:+2348131577816">
               <Phone className="h-5 w-5" />
-              +234 800 000 0000
+              +234 813 157 7816
             </a>
           </Button>
         </div>

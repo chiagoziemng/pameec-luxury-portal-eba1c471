@@ -1,7 +1,7 @@
 import { MessageCircle } from 'lucide-react';
 
 export function WhatsAppButton() {
-  const whatsappNumber = '2348000000000';
+  const whatsappNumber = '2348131577816';
   const message = encodeURIComponent('Hello! I would like to make a reservation at Pameec Luxury Suite.');
   
   return (
