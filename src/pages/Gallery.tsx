@@ -14,21 +14,37 @@ import pameecHallStage from '@/assets/pameec-hall-stage.jpg';
 import pameecOutdoorBar from '@/assets/pameec-outdoor-bar.jpg';
 import pameecTwinBuildings from '@/assets/pameec-twin-buildings.jpg';
 import pameecEventHall from '@/assets/pameec-event-hall.jpg';
+import pameecExclusiveApartment from '@/assets/pameec-exclusive-apartment.jpg';
+import pameecExclusiveApartment2 from '@/assets/pameec-exclusive-apartment-2.jpg';
+import pameecExclusiveTwin from '@/assets/pameec-exclusive-twin.jpg';
+import pameecLuxurySuiteUtako from '@/assets/pameec-luxury-suite-utako.jpg';
+import pameecRestaurantInterior from '@/assets/pameec-restaurant-interior.jpg';
+import pameecRoomStandard from '@/assets/pameec-room-standard.jpg';
+import pameecRoomSuperior from '@/assets/pameec-room-superior.jpg';
+import pameecRoomLuxury from '@/assets/pameec-room-luxury.jpg';
 
 const galleryImages = [
   { src: pameecTwinBuildings, alt: 'Pameec Luxury Suite twin buildings in Lokogoma', category: 'Exterior' },
   { src: pameecLokogoma, alt: 'Pameec Luxury Suite Lokogoma exterior', category: 'Exterior' },
   { src: pameecUtako, alt: 'Pameec Luxury Suite Utako exterior', category: 'Exterior' },
   { src: pameecEventHall, alt: 'Pameec Event Hall & Apartment building', category: 'Exterior' },
+  { src: pameecExclusiveApartment, alt: 'Pameec Exclusive Apartment exterior view', category: 'Exterior' },
+  { src: pameecExclusiveApartment2, alt: 'Pameec Exclusive Apartment building', category: 'Exterior' },
+  { src: pameecExclusiveTwin, alt: 'Pameec Exclusive Apartment twin buildings', category: 'Exterior' },
+  { src: pameecLuxurySuiteUtako, alt: 'Pameec Luxury Suite Utako front entrance', category: 'Exterior' },
   { src: pameecReception, alt: 'Reception area at Pameec Luxury Suite', category: 'Lobby' },
   { src: pameecPool, alt: 'Swimming pool at Pameec Lokogoma', category: 'Pool' },
-  { src: pameecRestaurant, alt: 'Indoor restaurant at Pameec', category: 'Dining' },
+  { src: pameecRestaurant, alt: 'Restaurant at Pameec', category: 'Dining' },
   { src: pameecOutdoorBar, alt: 'Outdoor bar area at Pameec', category: 'Dining' },
+  { src: pameecRestaurantInterior, alt: 'Restaurant interior at Pameec', category: 'Dining' },
   { src: pameecHallInterior, alt: 'Event hall interior setup at Pameec', category: 'Events' },
   { src: pameecHallStage, alt: 'Event hall with stage at Pameec', category: 'Events' },
+  { src: pameecRoomStandard, alt: 'Standard room at Pameec Luxury Suite', category: 'Rooms' },
+  { src: pameecRoomSuperior, alt: 'Superior room at Pameec Luxury Suite', category: 'Rooms' },
+  { src: pameecRoomLuxury, alt: 'Luxury suite at Pameec Luxury Suite', category: 'Rooms' },
 ];
 
-const categories = ['All', 'Exterior', 'Lobby', 'Pool', 'Dining', 'Events'];
+const categories = ['All', 'Exterior', 'Lobby', 'Pool', 'Dining', 'Events', 'Rooms'];
 
 export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState('All');
