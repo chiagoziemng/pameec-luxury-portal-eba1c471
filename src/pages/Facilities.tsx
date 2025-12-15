@@ -152,7 +152,7 @@ export default function Facilities() {
               <p className="text-muted-foreground leading-relaxed mb-8">
                 Our multipurpose event halls are designed to accommodate gatherings of all 
                 sizes, from intimate corporate meetings to grand wedding celebrations. 
-                With capacities ranging from 500 to 1,000 guests, our venues offer 
+                With capacities ranging from 500 to 800 guests, our venues offer 
                 flexibility and elegance.
               </p>
               

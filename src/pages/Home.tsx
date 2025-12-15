@@ -322,7 +322,7 @@ export default function Home() {
                 align="left"
               />
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Our multipurpose halls accommodate 500 to 1,000 guests, making them perfect for 
+                Our multipurpose halls accommodate 500 to 800 guests, making them perfect for 
                 weddings, corporate conferences, seminars, and special celebrations.
               </p>
               <ul className="space-y-3 mb-8">
@@ -412,7 +412,7 @@ export default function Home() {
           <div className="max-w-3xl mx-auto mt-12 space-y-8">
             <div className="border-b border-border pb-6">
               <h3 className="font-heading text-lg font-medium mb-3">What are the check-in and check-out times?</h3>
-              <p className="text-muted-foreground">Check-in is at 2:00 PM and check-out is at 12:00 PM. Early check-in and late check-out can be arranged subject to availability.</p>
+              <p className="text-muted-foreground">Check-in is at 12:01 PM and check-out is at 12:00 PM. Early check-in and late check-out can be arranged subject to availability.</p>
             </div>
             <div className="border-b border-border pb-6">
               <h3 className="font-heading text-lg font-medium mb-3">Do you offer airport pickup services?</h3>
@@ -424,7 +424,7 @@ export default function Home() {
             </div>
             <div className="border-b border-border pb-6">
               <h3 className="font-heading text-lg font-medium mb-3">Can you host weddings and conferences?</h3>
-              <p className="text-muted-foreground">Yes, our event halls can accommodate 500 to 1,000 guests and are equipped with state-of-the-art audio/visual equipment, perfect for weddings, conferences, and corporate events.</p>
+              <p className="text-muted-foreground">Yes, our event halls can accommodate 500 to 800 guests and are equipped with state-of-the-art audio/visual equipment, perfect for weddings, conferences, and corporate events.</p>
             </div>
           </div>
         </div>
