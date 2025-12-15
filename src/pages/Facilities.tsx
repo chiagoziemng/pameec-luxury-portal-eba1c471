@@ -7,8 +7,9 @@ import {
 import { Button } from '@/components/ui/button';
 import { SectionHeader } from '@/components/common/SectionHeader';
 import pameecPool from '@/assets/pameec-pool.jpg';
-import pameecRestaurant from '@/assets/pameec-restaurant.jpg';
+import pameecOutdoorBar from '@/assets/pameec-outdoor-bar.jpg';
 import pameecHallInterior from '@/assets/pameec-hall-interior.jpg';
+import pameecRestaurantInterior from '@/assets/pameec-restaurant-interior.jpg';
 
 const mainFacilities = [
   {
@@ -22,14 +23,14 @@ const mainFacilities = [
     icon: Utensils,
     title: 'Restaurant',
     description: 'Fine dining experience with a menu featuring local Nigerian cuisine and international dishes prepared by our expert chefs.',
-    image: pameecRestaurant,
+    image: pameecRestaurantInterior,
     location: 'All Branches',
   },
   {
     icon: Wine,
     title: 'Bar & Lounge',
     description: 'Indoor and outdoor bars serving premium beverages, cocktails, and light refreshments in a sophisticated atmosphere.',
-    image: pameecRestaurant,
+    image: pameecOutdoorBar,
     location: 'All Branches',
   },
   {
@@ -217,7 +218,7 @@ export default function Facilities() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
               <img 
-                src={pameecRestaurant}
+                src={pameecOutdoorBar}
                 alt="Fine dining restaurant at Pameec Luxury Suite Abuja"
                 className="w-full h-[500px] object-cover rounded-sm"
                 loading="lazy"

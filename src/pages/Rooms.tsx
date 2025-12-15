@@ -3,14 +3,18 @@ import { Link } from 'react-router-dom';
 import { Check, Users, Bed, Bath, Wifi, Tv, Wind, Coffee } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { SectionHeader } from '@/components/common/SectionHeader';
-import roomImage from '@/assets/room-suite.jpg';
+import pameecRoomStandard from '@/assets/pameec-room-standard.jpg';
+import pameecRoomSuperior from '@/assets/pameec-room-superior.jpg';
+import pameecRoomLuxury from '@/assets/pameec-room-luxury.jpg';
+import pameecExclusiveApartment from '@/assets/pameec-exclusive-apartment.jpg';
+import pameecExclusiveApartment2 from '@/assets/pameec-exclusive-apartment-2.jpg';
 
 const roomCategories = [
   {
     id: 'standard',
-    name: 'Standard Suite',
+    name: 'Standard Room',
     description: 'Comfortable and well-appointed rooms perfect for short business trips and solo travelers.',
-    price: 'From ₦45,000',
+    price: '₦30,000',
     priceNote: 'per night',
     size: '25 sqm',
     occupancy: '1-2 guests',
@@ -18,25 +22,13 @@ const roomCategories = [
     amenities: ['Free WiFi', 'Air Conditioning', 'Flat-screen TV', 'En-suite Bathroom', 'Work Desk', 'Room Service'],
     features: ['Daily housekeeping', 'Complimentary breakfast', '24/7 reception'],
     available: ['Lokogoma', 'Utako'],
-  },
-  {
-    id: 'business',
-    name: 'Business Suite',
-    description: 'Designed for the modern business traveler with dedicated workspace and premium amenities.',
-    price: 'From ₦65,000',
-    priceNote: 'per night',
-    size: '32 sqm',
-    occupancy: '1-2 guests',
-    bedType: 'King Bed',
-    amenities: ['Free WiFi', 'Air Conditioning', 'Smart TV', 'En-suite Bathroom', 'Executive Desk', 'Mini Bar', 'Coffee Maker'],
-    features: ['Daily housekeeping', 'Complimentary breakfast', 'Priority check-in', 'Business center access'],
-    available: ['Lokogoma', 'Utako'],
+    image: pameecRoomStandard,
   },
   {
     id: 'superior',
     name: 'Superior Room',
     description: 'Spacious rooms with enhanced comfort and city views, perfect for extended stays.',
-    price: 'From ₦55,000',
+    price: '₦35,000',
     priceNote: 'per night',
     size: '28 sqm',
     occupancy: '2 guests',
@@ -44,25 +36,41 @@ const roomCategories = [
     amenities: ['Free WiFi', 'Air Conditioning', 'Flat-screen TV', 'En-suite Bathroom', 'Sitting Area', 'Room Service'],
     features: ['Daily housekeeping', 'Complimentary breakfast', 'Late checkout (subject to availability)'],
     available: ['Lokogoma', 'Utako'],
+    image: pameecRoomSuperior,
   },
   {
-    id: 'diplomatic',
-    name: 'Diplomatic Suite',
-    description: 'Our premium offering with separate living area, perfect for VIPs and diplomatic guests.',
-    price: 'From ₦120,000',
+    id: 'business',
+    name: 'Business Room',
+    description: 'Designed for the modern business traveler with dedicated workspace and premium amenities.',
+    price: '₦35,000',
     priceNote: 'per night',
-    size: '55 sqm',
-    occupancy: '2-4 guests',
-    bedType: 'King Bed + Living Room',
-    amenities: ['Free WiFi', 'Air Conditioning', 'Smart TV', 'En-suite Bathroom', 'Living Room', 'Mini Bar', 'Coffee Maker', 'Safe'],
-    features: ['Daily housekeeping', 'Complimentary breakfast', 'Airport transfer', 'Dedicated concierge', 'Late checkout'],
-    available: ['Lokogoma'],
+    size: '32 sqm',
+    occupancy: '1-2 guests',
+    bedType: 'King Bed',
+    amenities: ['Free WiFi', 'Air Conditioning', 'Smart TV', 'En-suite Bathroom', 'Executive Desk', 'Mini Bar', 'Coffee Maker'],
+    features: ['Daily housekeeping', 'Complimentary breakfast', 'Priority check-in', 'Business center access'],
+    available: ['Lokogoma', 'Utako'],
+    image: pameecRoomLuxury,
+  },
+  {
+    id: 'luxury',
+    name: 'Luxury Suite',
+    description: 'Premium suite with elegant furnishings and enhanced amenities for a sophisticated stay.',
+    price: '₦40,000',
+    priceNote: 'per night',
+    size: '38 sqm',
+    occupancy: '2 guests',
+    bedType: 'King Bed',
+    amenities: ['Free WiFi', 'Air Conditioning', 'Smart TV', 'En-suite Bathroom', 'Sitting Area', 'Mini Bar', 'Coffee Maker'],
+    features: ['Daily housekeeping', 'Complimentary breakfast', 'Priority check-in', 'Late checkout'],
+    available: ['Lokogoma', 'Utako'],
+    image: pameecRoomStandard,
   },
   {
     id: 'executive',
-    name: 'Executive Suite',
+    name: 'Executive Room',
     description: 'Luxurious suite with premium furnishings and exclusive amenities for discerning guests.',
-    price: 'From ₦95,000',
+    price: '₦50,000',
     priceNote: 'per night',
     size: '45 sqm',
     occupancy: '2-3 guests',
@@ -70,6 +78,21 @@ const roomCategories = [
     amenities: ['Free WiFi', 'Air Conditioning', 'Smart TV', 'En-suite Bathroom', 'Sitting Room', 'Mini Bar', 'Coffee Maker'],
     features: ['Daily housekeeping', 'Complimentary breakfast', 'Priority check-in', 'Room upgrade (subject to availability)'],
     available: ['Lokogoma', 'Utako'],
+    image: pameecRoomSuperior,
+  },
+  {
+    id: 'diplomatic',
+    name: 'Diplomatic Room',
+    description: 'Our premium offering with separate living area, perfect for VIPs and diplomatic guests.',
+    price: '₦70,000',
+    priceNote: 'per night',
+    size: '55 sqm',
+    occupancy: '2-4 guests',
+    bedType: 'King Bed + Living Room',
+    amenities: ['Free WiFi', 'Air Conditioning', 'Smart TV', 'En-suite Bathroom', 'Living Room', 'Mini Bar', 'Coffee Maker', 'Safe'],
+    features: ['Daily housekeeping', 'Complimentary breakfast', 'Airport transfer', 'Dedicated concierge', 'Late checkout'],
+    available: ['Lokogoma'],
+    image: pameecRoomLuxury,
   },
 ];
 
@@ -86,6 +109,7 @@ const apartmentTypes = [
     amenities: ['Full Kitchen', 'Living Room', 'Free WiFi', 'Air Conditioning', 'Smart TV', 'En-suite Bathroom', 'Dining Area'],
     features: ['Weekly housekeeping', 'Self-catering', 'Long-stay discounts available'],
     available: ['Exclusive Apartment'],
+    image: pameecExclusiveApartment,
   },
   {
     id: 'two-bed',
@@ -99,6 +123,7 @@ const apartmentTypes = [
     amenities: ['Full Kitchen', 'Living Room', 'Free WiFi', 'Air Conditioning', 'Smart TV', '2 Bathrooms', 'Dining Area', 'Balcony'],
     features: ['Weekly housekeeping', 'Self-catering', 'Long-stay discounts available', 'Laundry facilities'],
     available: ['Exclusive Apartment'],
+    image: pameecExclusiveApartment2,
   },
 ];
 
@@ -115,7 +140,7 @@ export default function Rooms() {
     <>
       <Helmet>
         <title>Rooms & Suites | Luxury Accommodation in Abuja | Pameec</title>
-        <meta name="description" content="Explore our range of luxury rooms and suites at Pameec Luxury Suite Abuja. From Standard Suites to Diplomatic Suites and serviced apartments. Book your perfect accommodation today." />
+        <meta name="description" content="Explore our range of luxury rooms and suites at Pameec Luxury Suite Abuja. From Standard Rooms to Diplomatic Suites and serviced apartments. Book your perfect accommodation today." />
         <meta name="keywords" content="hotel rooms Abuja, luxury suites Abuja, serviced apartments Abuja, business hotel Abuja, diplomatic suite Abuja" />
         <link rel="canonical" href="https://pameecluxurysuite.com/rooms" />
         
@@ -177,7 +202,7 @@ export default function Rooms() {
                 <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
                   <div className="relative">
                     <img 
-                      src={roomImage}
+                      src={room.image}
                       alt={`${room.name} at Pameec Luxury Suite Abuja`}
                       className="w-full h-[350px] object-cover rounded-sm shadow-luxury"
                       loading="lazy"
@@ -263,7 +288,7 @@ export default function Rooms() {
               <article key={apt.id} className="bg-background rounded-sm overflow-hidden shadow-luxury">
                 <div className="relative h-64">
                   <img 
-                    src={roomImage}
+                    src={apt.image}
                     alt={`${apt.name} at Pameec Exclusive Apartment Abuja`}
                     className="w-full h-full object-cover"
                     loading="lazy"
@@ -321,7 +346,7 @@ export default function Rooms() {
               <Link to="/contact">Contact Us</Link>
             </Button>
             <Button variant="whatsapp" size="lg" asChild>
-              <a href="https://wa.me/2348000000000" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/2348131577816" target="_blank" rel="noopener noreferrer">
                 Chat on WhatsApp
               </a>
             </Button>

@@ -4,10 +4,13 @@ import { ArrowRight, Shield, Zap, MapPin, Users, Wifi, Car } from 'lucide-react'
 import { Button } from '@/components/ui/button';
 import { SectionHeader } from '@/components/common/SectionHeader';
 import heroImage from '@/assets/pameec-twin-buildings.jpg';
-import roomImage from '@/assets/pameec-reception.jpg';
+import roomImage from '@/assets/pameec-room-standard.jpg';
 import poolImage from '@/assets/pameec-pool.jpg';
 import restaurantImage from '@/assets/pameec-restaurant.jpg';
 import eventHallImage from '@/assets/pameec-hall-interior.jpg';
+import pameecLokogoma from '@/assets/pameec-lokogoma.jpg';
+import pameecLuxurySuiteUtako from '@/assets/pameec-luxury-suite-utako.jpg';
+import pameecExclusiveApartment from '@/assets/pameec-exclusive-apartment.jpg';
 
 const branches = [
   {
@@ -16,6 +19,7 @@ const branches = [
     description: 'Our flagship property featuring a stunning swimming pool, spacious event halls, and premium suites in a serene residential district.',
     features: ['Swimming Pool', 'Event Halls', 'Restaurant & Bar'],
     href: '/branches#lokogoma',
+    image: pameecLokogoma,
   },
   {
     name: 'Pameec Luxury Suite',
@@ -23,6 +27,7 @@ const branches = [
     description: 'Strategically located in the heart of Utako, perfect for business travelers seeking convenience and luxury.',
     features: ['Business Center', 'Conference Rooms', 'Fine Dining'],
     href: '/branches#utako',
+    image: pameecLuxurySuiteUtako,
   },
   {
     name: 'Pameec Exclusive Apartment',
@@ -30,6 +35,7 @@ const branches = [
     description: 'Fully serviced apartments with equipped kitchens, ideal for extended stays and families.',
     features: ['Full Kitchen', 'Living Room', 'Long-Stay Packages'],
     href: '/branches#exclusive',
+    image: pameecExclusiveApartment,
   },
 ];
 
@@ -57,11 +63,12 @@ const features = [
 ];
 
 const roomTypes = [
-  { name: 'Standard Suite', price: 'From ₦45,000/night' },
-  { name: 'Business Suite', price: 'From ₦65,000/night' },
-  { name: 'Superior Room', price: 'From ₦55,000/night' },
-  { name: 'Diplomatic Suite', price: 'From ₦120,000/night' },
-  { name: 'Executive Suite', price: 'From ₦95,000/night' },
+  { name: 'Standard Room', price: '₦30,000/night' },
+  { name: 'Superior Room', price: '₦35,000/night' },
+  { name: 'Business Room', price: '₦35,000/night' },
+  { name: 'Luxury Suite', price: '₦40,000/night' },
+  { name: 'Executive Room', price: '₦50,000/night' },
+  { name: 'Diplomatic Room', price: '₦70,000/night' },
 ];
 
 export default function Home() {
@@ -179,7 +186,7 @@ export default function Home() {
                 loading="lazy"
               />
               <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground p-6 rounded-sm shadow-lg">
-                <p className="text-4xl font-heading font-semibold">15+</p>
+                <p className="text-4xl font-heading font-semibold">7+</p>
                 <p className="text-sm">Years of Excellence</p>
               </div>
             </div>
@@ -202,8 +209,13 @@ export default function Home() {
                 key={branch.location + index}
                 className="bg-background rounded-sm overflow-hidden shadow-luxury card-hover"
               >
-                <div className="h-48 bg-muted flex items-center justify-center">
-                  <MapPin className="h-12 w-12 text-muted-foreground" />
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src={branch.image} 
+                    alt={`${branch.name} ${branch.location}`}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="p-8">
                   <p className="text-sm text-primary font-medium mb-2">{branch.location}</p>
@@ -393,35 +405,27 @@ export default function Home() {
       <section className="section-padding bg-background">
         <div className="container-luxury">
           <SectionHeader
-            label="FAQ"
+            label="FAQs"
             title="Frequently Asked Questions"
-            description="Everything you need to know about staying with us."
           />
           
-          <div className="max-w-3xl mx-auto mt-12 space-y-6">
-            {[
-              {
-                q: 'Is Pameec Luxury Suite near Abuja city center?',
-                a: 'Yes, our Utako branches are located in the heart of Abuja, just 15 minutes from the city center. The Lokogoma branch offers a more serene environment while still being accessible to major attractions.'
-              },
-              {
-                q: 'Do you have event halls for conferences and weddings?',
-                a: 'Yes, we have multipurpose halls that can accommodate 500 to 1,000 guests, perfect for corporate events, weddings, and conferences in Abuja.'
-              },
-              {
-                q: 'Is there constant power supply at Pameec hotels?',
-                a: 'Absolutely. All our properties feature 24/7 power supply backed by Mikano generators and solar backup systems.'
-              },
-              {
-                q: 'Do you offer airport pickup services?',
-                a: 'Yes, we provide hotel taxi pickup and drop-off services from Nnamdi Azikiwe International Airport and other locations in Abuja.'
-              },
-            ].map((faq, index) => (
-              <div key={index} className="border-b border-border pb-6">
-                <h3 className="font-heading text-lg font-medium mb-3">{faq.q}</h3>
-                <p className="text-muted-foreground">{faq.a}</p>
-              </div>
-            ))}
+          <div className="max-w-3xl mx-auto mt-12 space-y-8">
+            <div className="border-b border-border pb-6">
+              <h3 className="font-heading text-lg font-medium mb-3">What are the check-in and check-out times?</h3>
+              <p className="text-muted-foreground">Check-in is at 2:00 PM and check-out is at 12:00 PM. Early check-in and late check-out can be arranged subject to availability.</p>
+            </div>
+            <div className="border-b border-border pb-6">
+              <h3 className="font-heading text-lg font-medium mb-3">Do you offer airport pickup services?</h3>
+              <p className="text-muted-foreground">Yes, we provide hotel taxi pickup and drop-off services from Nnamdi Azikiwe International Airport. Please contact our front desk to arrange transportation.</p>
+            </div>
+            <div className="border-b border-border pb-6">
+              <h3 className="font-heading text-lg font-medium mb-3">Which branch has a swimming pool?</h3>
+              <p className="text-muted-foreground">Our Lokogoma branch features an outdoor swimming pool with comfortable loungers, perfect for relaxation.</p>
+            </div>
+            <div className="border-b border-border pb-6">
+              <h3 className="font-heading text-lg font-medium mb-3">Can you host weddings and conferences?</h3>
+              <p className="text-muted-foreground">Yes, our event halls can accommodate 500 to 1,000 guests and are equipped with state-of-the-art audio/visual equipment, perfect for weddings, conferences, and corporate events.</p>
+            </div>
           </div>
         </div>
       </section>

@@ -4,8 +4,8 @@ import { MapPin, Phone, Mail, Waves, Utensils, Car, Shield, Zap, Wifi } from 'lu
 import { Button } from '@/components/ui/button';
 import { SectionHeader } from '@/components/common/SectionHeader';
 import pameecLokogoma from '@/assets/pameec-lokogoma.jpg';
-import pameecUtako from '@/assets/pameec-utako.jpg';
-import pameecEventHall from '@/assets/pameec-event-hall.jpg';
+import pameecLuxurySuiteUtako from '@/assets/pameec-luxury-suite-utako.jpg';
+import pameecExclusiveApartment from '@/assets/pameec-exclusive-apartment.jpg';
 
 const branches = [
   {
@@ -26,7 +26,7 @@ const branches = [
       { icon: Car, name: 'Parking', desc: 'Spacious secure parking' },
       { icon: Wifi, name: 'Free WiFi', desc: 'High-speed internet' },
     ],
-    rooms: ['Standard Suite', 'Business Suite', 'Superior Room', 'Diplomatic Suite', 'Executive Suite'],
+    rooms: ['Standard Room', 'Superior Room', 'Business Room', 'Luxury Suite', 'Executive Room', 'Diplomatic Room'],
     mapUrl: 'https://maps.google.com/?q=Plot+354+Adjacent+Sunshine+Estate+Along+Lokogoma+Apo+Apo+Dutse+District+Abuja',
   },
   {
@@ -34,10 +34,10 @@ const branches = [
     name: 'Pameec Luxury Suite',
     location: 'Utako',
     tagline: 'Prime location for business travelers',
-    address: 'No 36 Ajose Adeogun Street, Utako, Abuja, FCT, Nigeria',
+    address: 'No 36 Ajose Adeogun Street, opposite Peace Mass, Utako, Abuja 900108, FCT, Nigeria',
     phone: '+234 901 408 4741',
     email: 'utako@pameecluxurysuite.com',
-    image: pameecUtako,
+    image: pameecLuxurySuiteUtako,
     description: 'Strategically located in the bustling Utako district, this property is perfect for business travelers and those who want to be in the heart of Abuja. With easy access to major business centers, government offices, and shopping areas, convenience meets luxury.',
     features: [
       { icon: Utensils, name: 'Restaurant & Bar', desc: 'Fine dining experience' },
@@ -47,7 +47,7 @@ const branches = [
       { icon: Wifi, name: 'Free WiFi', desc: 'High-speed internet' },
       { icon: Car, name: 'Airport Transfer', desc: 'Pickup and drop-off service' },
     ],
-    rooms: ['Standard Suite', 'Business Suite', 'Superior Room', 'Executive Suite'],
+    rooms: ['Standard Room', 'Superior Room', 'Business Room', 'Luxury Suite', 'Executive Room'],
     mapUrl: 'https://maps.google.com/?q=No+36+Ajose+Adeogun+St+opposite+Peace+Mass+Utako+Abuja+900108',
   },
   {
@@ -58,7 +58,7 @@ const branches = [
     address: 'No 4 Henry Adefope Close, Utako, Abuja, FCT, Nigeria',
     phone: '+234 703 313 4119',
     email: 'exclusive@pameecluxurysuite.com',
-    image: pameecEventHall,
+    image: pameecExclusiveApartment,
     description: 'Perfect for extended stays, relocating families, and guests who prefer a home-away-from-home experience. Our exclusive apartments feature fully equipped kitchens, spacious living areas, and all the comforts of home combined with hotel-quality service.',
     features: [
       { icon: Utensils, name: 'Full Kitchen', desc: 'Equipped with modern appliances' },

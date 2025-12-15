@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Award, Users, Globe, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { SectionHeader } from '@/components/common/SectionHeader';
-import lobbyImage from '@/assets/hero-lobby.jpg';
-import restaurantImage from '@/assets/restaurant.jpg';
+import pameecTwinBuildings from '@/assets/pameec-twin-buildings.jpg';
+import pameecRestaurant from '@/assets/pameec-restaurant.jpg';
 
 const values = [
   {
@@ -29,19 +29,12 @@ const values = [
   },
 ];
 
-const milestones = [
-  { year: '2008', event: 'Pameec Luxury Suite established in Lokogoma' },
-  { year: '2014', event: 'Expansion to Utako with second property' },
-  { year: '2018', event: 'Launch of Pameec Exclusive Apartment' },
-  { year: '2023', event: 'Major renovation and facility upgrades' },
-];
-
 export default function About() {
   return (
     <>
       <Helmet>
         <title>About Pameec Luxury Suite | Premier Hotel in Abuja, Nigeria</title>
-        <meta name="description" content="Learn about Pameec Luxury Suite, Abuja's premier hospitality brand with over 15 years of excellence. Discover our story, values, and commitment to luxury accommodation in Nigeria." />
+        <meta name="description" content="Learn about Pameec Luxury Suite, Abuja's premier hospitality brand established in 2018. Discover our story, values, and commitment to luxury accommodation in Nigeria." />
         <link rel="canonical" href="https://pameecluxurysuite.com/about" />
       </Helmet>
 
@@ -54,7 +47,7 @@ export default function About() {
               Redefining Luxury Hospitality in Abuja
             </h1>
             <p className="text-xl text-background/70 leading-relaxed">
-              For over 15 years, Pameec Luxury Suite has been the preferred choice for 
+              Since 2018, Pameec Luxury Suite has been the preferred choice for 
               discerning travelers seeking exceptional comfort, security, and world-class 
               service in Nigeria's capital city.
             </p>
@@ -76,7 +69,7 @@ export default function About() {
                 <p>
                   Pameec Luxury Suite was born from a vision to create a hospitality experience 
                   that combines international standards with authentic Nigerian warmth. Founded 
-                  in 2008, our first property in Lokogoma quickly became a landmark destination 
+                  in 2018, our first property in Lokogoma quickly became a landmark destination 
                   for business travelers, government officials, and tourists alike.
                 </p>
                 <p>
@@ -94,8 +87,8 @@ export default function About() {
             </div>
             <div>
               <img 
-                src={lobbyImage} 
-                alt="Pameec Luxury Suite elegant lobby interior" 
+                src={pameecTwinBuildings} 
+                alt="Pameec Luxury Suite twin buildings exterior" 
                 className="w-full h-[500px] object-cover rounded-sm shadow-luxury-lg"
                 loading="lazy"
               />
@@ -151,42 +144,13 @@ export default function About() {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="section-padding bg-secondary">
-        <div className="container-luxury">
-          <SectionHeader
-            label="Our Journey"
-            title="Milestones & Achievements"
-          />
-          
-          <div className="max-w-3xl mx-auto mt-16">
-            <div className="relative">
-              <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-border md:-translate-x-1/2" />
-              
-              {milestones.map((milestone, index) => (
-                <div key={milestone.year} className={`relative flex items-center mb-12 last:mb-0 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
-                  <div className={`flex-1 ${index % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12'} pl-12 md:pl-0`}>
-                    <span className="text-primary font-heading text-xl font-semibold">{milestone.year}</span>
-                    <p className="text-muted-foreground mt-2">{milestone.event}</p>
-                  </div>
-                  <div className="absolute left-0 md:left-1/2 w-8 h-8 bg-primary rounded-full flex items-center justify-center md:-translate-x-1/2">
-                    <div className="w-3 h-3 bg-primary-foreground rounded-full" />
-                  </div>
-                  <div className="flex-1 hidden md:block" />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Team Section */}
-      <section className="section-padding bg-background">
+      <section className="section-padding bg-secondary">
         <div className="container-luxury">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
               <img 
-                src={restaurantImage} 
+                src={pameecRestaurant} 
                 alt="Pameec Luxury Suite team providing excellent service" 
                 className="w-full h-[400px] object-cover rounded-sm shadow-luxury-lg"
                 loading="lazy"
