@@ -314,7 +314,7 @@ export default function Contact() {
                     className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
                   >
                     <Mail className="h-5 w-5 text-primary" />
-                    info@pameecluxurysuite.com
+                    info@pameechotels.com.ng
                   </a>
                   <a 
                     href="https://wa.me/2348131577816" 

@@ -15,7 +15,7 @@ const branches = [
     tagline: 'Our flagship property with swimming pool',
     address: 'Plot 354, Adjacent Sunshine Estate, Along Lokogoma/Apo, Apo Dutse District, Abuja, FCT, Nigeria',
     phone: '+234 816 606 5843',
-    email: 'lokogoma@pameecluxurysuite.com',
+    email: 'lokogoma@pameechotels.com.ng',
     image: pameecLokogoma,
     description: 'Nestled in the serene residential district of Lokogoma, our flagship property offers a perfect blend of luxury and tranquility. This location features our signature swimming pool, making it ideal for guests seeking relaxation alongside premium accommodation.',
     features: [
@@ -36,7 +36,7 @@ const branches = [
     tagline: 'Prime location for business travelers',
     address: 'No 36 Ajose Adeogun Street, opposite Peace Mass, Utako, Abuja 900108, FCT, Nigeria',
     phone: '+234 901 408 4741',
-    email: 'utako@pameecluxurysuite.com',
+    email: 'utako@pameechotels.com.ng',
     image: pameecLuxurySuiteUtako,
     description: 'Strategically located in the bustling Utako district, this property is perfect for business travelers and those who want to be in the heart of Abuja. With easy access to major business centers, government offices, and shopping areas, convenience meets luxury.',
     features: [
@@ -57,7 +57,7 @@ const branches = [
     tagline: 'Fully serviced apartments for extended stays',
     address: 'No 4 Henry Adefope Close, Utako, Abuja, FCT, Nigeria',
     phone: '+234 703 313 4119',
-    email: 'exclusive@pameecluxurysuite.com',
+    email: 'exclusive@pameechotels.com.ng',
     image: pameecExclusiveApartment,
     description: 'Perfect for extended stays, relocating families, and guests who prefer a home-away-from-home experience. Our exclusive apartments feature fully equipped kitchens, spacious living areas, and all the comforts of home combined with hotel-quality service.',
     features: [

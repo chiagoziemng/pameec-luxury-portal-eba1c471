@@ -54,9 +54,9 @@ const roomCategories = [
   },
   {
     id: 'luxury',
-    name: 'Luxury Suite',
+    name: 'Luxury Room',
     description: 'Premium suite with elegant furnishings and enhanced amenities for a sophisticated stay.',
-    price: '₦40,000',
+    price: '₦45,000',
     priceNote: 'per night',
     size: '38 sqm',
     occupancy: '2 guests',

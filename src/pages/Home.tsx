@@ -66,7 +66,7 @@ const roomTypes = [
   { name: 'Standard Room', price: '₦30,000/night' },
   { name: 'Superior Room', price: '₦35,000/night' },
   { name: 'Business Room', price: '₦35,000/night' },
-  { name: 'Luxury Suite', price: '₦40,000/night' },
+  { name: 'Luxury Room', price: '₦45,000/night' },
   { name: 'Executive Room', price: '₦50,000/night' },
   { name: 'Diplomatic Room', price: '₦70,000/night' },
 ];
