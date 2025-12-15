@@ -36,7 +36,7 @@ const mainFacilities = [
   {
     icon: Users,
     title: 'Event Halls',
-    description: 'Multipurpose halls accommodating 500-1,000 guests, ideal for weddings, conferences, seminars, and corporate events.',
+    description: 'Multipurpose halls accommodating 500-800 guests, ideal for weddings, conferences, seminars, and corporate events.',
     image: pameecHallInterior,
     location: 'Lokogoma & Utako',
   },
