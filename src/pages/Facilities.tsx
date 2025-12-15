@@ -71,7 +71,7 @@ export default function Facilities() {
     <>
       <Helmet>
         <title>Facilities & Services | Pameec Luxury Suite Abuja</title>
-        <meta name="description" content="Discover world-class facilities at Pameec Luxury Suite: swimming pool, restaurants, bars, event halls for 500-1000 guests, 24/7 power supply, CCTV security, and premium amenities in Abuja." />
+        <meta name="description" content="Discover world-class facilities at Pameec Luxury Suite: swimming pool, restaurants, bars, event halls for 500-800 guests, 24/7 power supply, CCTV security, and premium amenities in Abuja." />
         <meta name="keywords" content="hotel facilities Abuja, event halls Abuja, conference halls Abuja, swimming pool hotel Abuja, hotel restaurant Abuja" />
         <link rel="canonical" href="https://pameecluxurysuite.com/facilities" />
       </Helmet>
