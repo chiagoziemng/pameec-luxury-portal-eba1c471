@@ -346,7 +346,7 @@ export default function Rooms() {
               <Link to="/contact">Contact Us</Link>
             </Button>
             <Button variant="whatsapp" size="lg" asChild>
-              <a href="https://wa.me/2348131577816" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/2348055120504" target="_blank" rel="noopener noreferrer">
                 Chat on WhatsApp
               </a>
             </Button>
