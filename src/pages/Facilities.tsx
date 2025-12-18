@@ -170,7 +170,7 @@ export default function Facilities() {
                   <Link to="/contact">Reserve a Hall</Link>
                 </Button>
                 <Button variant="outline" asChild>
-                  <a href="https://wa.me/2348131577816" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/2348055120504" target="_blank" rel="noopener noreferrer">
                     Get a Quote
                   </a>
                 </Button>
