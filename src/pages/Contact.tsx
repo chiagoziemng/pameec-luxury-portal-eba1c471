@@ -317,7 +317,7 @@ export default function Contact() {
                     info@pameechotels.com.ng
                   </a>
                   <a 
-                    href="https://wa.me/2348131577816" 
+                    href="https://wa.me/2348055120504" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors"
@@ -329,7 +329,7 @@ export default function Contact() {
                 
                 <div className="mt-8 pt-6 border-t border-border">
                   <Button variant="whatsapp" className="w-full" asChild>
-                    <a href="https://wa.me/2348131577816" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/2348055120404" target="_blank" rel="noopener noreferrer">
                       <MessageCircle className="h-4 w-4" />
                       WhatsApp Us Now
                     </a>
